@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarot Daily</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- BỘ BÀI -->
+    <div class="card-area">
+        <div class="card-wrapper">
+            <img id="card" class="card" src="assets/back.png">
+        </div>
+        <button id="shuffleBtn" class="btn">Xáo lại bài</button>
+    </div>
+
+    <!-- CHECKLIST -->
+    <div class="checklist-area">
+        <div class="checklist" id="checklist"></div>
+
+        <p class="note">Lưu ý: Nhấp hai lần vào ô ngày để ghi chú</p>
+    </div>
+
+</div>
+
+<!-- POPUP GHI CHÚ -->
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <h3>Ghi chú ngày <span id="popup-day"></span></h3>
+        <textarea id="noteInput"></textarea>
+        <button id="saveNote" class="btn small">Lưu</button>
+    </div>
+</div>
+
+<audio id="flipSound" src="flip.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
